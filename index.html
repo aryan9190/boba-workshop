@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan's Website</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6A0572, #3B1C32);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #333;
+        }
+      
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            animation: fadeIn 1.5s ease;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #6A0572;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: textShadowPulse 3s ease-in-out infinite;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #555;
+            margin-top: 5px;
+            font-style: italic;
+        }
+      
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+      
+        @keyframes textShadowPulse {
+            0%, 100% {
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+      
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #FF6B6B;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .container a:hover {
+            background-color: #6A0572;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, This is Aryan</h1>
+        <p>This website was made during the awesome boba workshop by @arnav</p>
+        <a href="https://boba.hackclub.com" target="_blank">Get your Boba Drops here</a>
+    </div>
+</body>
+</html>
